@@ -73,7 +73,7 @@ The project generates three graphical reports using Matplotlib:
 
 ### 📄 Automatic Report Generation
 
-The application automatically generates:
+The application automatically generates these reports inside `codebase/outputs/`:
 
 - `performance_summary.csv`
 - `course_wise_performance.csv`
@@ -102,7 +102,7 @@ The application automatically generates:
 ```text
 Student-Record-Management-System/
 │
-├── 📄 student_record_management.py
+├── 📂 codebase/\n│   ├── 📄 student_record_management.py\n│   ├── 📂 data/\n│   │   └── 📄 students.csv\n│   └── 📂 outputs/\n│       ├── 📊 student_marks.png\n│       ├── 📊 marks_distribution.png\n│       ├── 🥧 course_distribution.png\n│       ├── 📄 performance_summary.csv\n│       └── 📄 course_wise_performance.csv
 │
 ├── 📂 data/
 │   └── 📄 students.csv
@@ -130,7 +130,7 @@ Follow these steps to run the project on your local machine.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/himanshuyadaaav/Student-Record-Management-System.git
 ```
 
 ### 2️⃣ Navigate to the Project Directory
@@ -142,13 +142,13 @@ cd Student-Record-Management-System
 ### 3️⃣ Install Required Libraries
 
 ```bash
-pip install numpy pandas matplotlib
+pip install -r requirements.txt
 ```
 
 ### 4️⃣ Run the Application
 
 ```bash
-python student_record_management.py
+python codebase/student_record_management.py
 ```
 
 ---
@@ -192,7 +192,7 @@ Enter Your Choice:
 
 The project uses `students.csv` as its primary data storage file.
 
-### 📄 File: `data/students.csv`
+### 📄 File: `codebase/data/students.csv`
 
 | Column | Description | Data Type |
 |---|---|---|
@@ -225,7 +225,7 @@ roll_no,name,course,marks
 
 ## 📊 Generated Project Outputs
 
-After selecting **Option 8 – Generate All Project Outputs**, the application creates the following files inside the `outputs` directory.
+After selecting **Option 8 – Generate All Project Outputs**, the application creates the following files inside the `codebase/outputs` directory.
 
 ### 🖼️ Graphical Reports
 
@@ -242,7 +242,7 @@ After selecting **Option 8 – Generate All Project Outputs**, the application c
 | `performance_summary.csv` | Overall Student Performance Statistics |
 | `course_wise_performance.csv` | Course-wise Performance Analysis |
 
-All reports are generated using the latest records available in the CSV database.
+All reports are generated using the latest records available in `codebase/data/students.csv`.
 
 ---
 
