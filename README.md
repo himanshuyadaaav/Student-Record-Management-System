@@ -102,25 +102,23 @@ The application automatically generates these reports inside `codebase/outputs/`
 ```text
 Student-Record-Management-System/
 │
-├── 📂 codebase/\n│   ├── 📄 student_record_management.py\n│   ├── 📂 data/\n│   │   └── 📄 students.csv\n│   └── 📂 outputs/\n│       ├── 📊 student_marks.png\n│       ├── 📊 marks_distribution.png\n│       ├── 🥧 course_distribution.png\n│       ├── 📄 performance_summary.csv\n│       └── 📄 course_wise_performance.csv
+├── codebase/
+│   ├── student_record_management.py
+│   └── data/
+│       └── students.csv
 │
-├── 📂 data/
-│   └── 📄 students.csv
+├── documentation/
+│   └── project report
 │
-├── 📂 outputs/
-│   ├── 📊 student_marks.png
-│   ├── 📊 marks_distribution.png
-│   ├── 🥧 course_distribution.png
-│   ├── 📄 performance_summary.csv
-│   └── 📄 course_wise_performance.csv
+├── outputs/
+│   └── previously generated output files
 │
-├── 📂 screenshots/
-│
-├── 📄 README.md
-│
-└── 📄 .gitignore
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
+When the application runs, it creates `codebase/outputs/` automatically and saves newly generated charts and CSV reports there.
 ---
 
 ## ⚙️ Installation & Setup
